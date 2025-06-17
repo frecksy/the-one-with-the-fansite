@@ -1,5 +1,5 @@
 body { /* Styles for all elements in the body section of HTML page */
-    background-image: url(imgs/fansite-background.jpg); /* Background image for web page */
+    background-image: url(fansite-background.jpg); /* Background image for web page */
     background-size: cover; /* Makes background image cover entire viewport */
     background-attachment: fixed; /* Keeps background in same spot during scrolling */
     background-repeat: no-repeat; /* Stops background image from repeating to fill space */
