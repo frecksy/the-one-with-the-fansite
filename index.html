@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Defines document type and version of HTML -->
+<html lang="en"> <!-- Defines language of contents -->
+  <head> <!-- Where webpage metadata goes -->
+    <meta charset="UTF-8" /> <!-- Specifies character encoding for HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Sets viewport for responsive design -->
+    <title>Friends Fansite | Home</title> <!-- Title of page that gets displayed in browser tab -->
+    <link rel="icon" type="image/x-icon" href="../imgs/attic-icon.png" /> <!-- Favicon displayed in tab for site -->
+    <link rel="stylesheet" href="style.css" /> <!-- Links index.html to CSS file for styling -->
+  </head>
+  <body>
+    <header class="main-header"> <!-- Semantic element used to define navigational content for page -->
+      <nav class="topnav" aria-label="Main navigation"> <!-- Defines navigational links to other pages in site -->
+        <a href="index.html">Home</a> <!-- Link to go to home page - <a> tags are used to create links and require an "href" attribute to specify where link goes to -->
+        <a href="characters.html">Characters</a> <!-- Link to go to characters page -->
+        <a href="about.html">About</a> <!-- Link to go to about page -->
+      </nav>
+      <h1 class="bullets"> <!-- Specifies main title of the page -->
+        <u> <!-- Stand for underlined and is used to underline specified text -->
+          The
+          <span class="bullet-red">&bull;</span> <!-- Is used to target inline elements (one's that are on the same row). Allows for a bullet point to be added between each word. <div> wouldn't work because it is a block element and I wanted to target words that were all on one line.-->
+          One
+          <span class="bullet-cyan">&bull;</span>
+          With
+          <span class="bullet-yellow">&bull;</span>
+          The
+          <span class="bullet-red">&bull;</span>
+          Fansite
+        </u>
+      </h1>
+    </header>
+
+    <main class="hp-content"> <!-- Specifies what is main content of page (in this case, the home page) -->
+      <section class="intro" id="intro-section" aria-labelledby="intro"> <!-- Used to group related content together, to organize page and make it easier to understand for screen readers and search engines -->
+        <h2 id="intro">"How you doin'?"</h2> <!-- Used to indicate a subheading -->
+        <div class="intro-text"> <!-- Used as container for elements so they can be styled using CSS -->
+          <p class="intro-p"> <!-- Defines paragraph -->
+            Welcome to my fansite all about the hit 90's television show, <em>Friends</em>! <!-- Stands for emphasis and indicates that the content between tags should be stressed (often is presented in italics)  -->
+            <br /><br /> <!-- Used to create a new line within a paragraph (added two blank lines in this case) -->
+            <em>Friends</em> is one of the most iconic sitcoms of all time, and
+           it has left an indelible mark on pop culture. From its memorable
+            catchphrases to its unforgettable characters, the show continues to
+            resonate with audiences around the world. Whether you're a die-hard
+            fan or just discovering the series for the first time, this fansite
+            is dedicated to celebrating everything that makes
+            <em>Friends</em> so special. Thanks for stopping by, and I hope you
+            enjoy exploring the world of <em>Friends</em> with me! <br /><br />
+            On this site, you'll find a brief introduction to the show, cute
+            character bios, and visit the
+            <a class="about-anchor" href="/pgs/about.html">"About"</a> <!-- Creates a hyper-link to about page within paragraph text -->
+            page to learn more on what I think makes <em>this</em> show the best
+            show of all! <br /><br />
+            Have a favorite quote or episode? Feel free to share your thoughts
+            and join the conversation with other fans!
+            <em>(This feature is coming soon...)</em>
+          </p>
+        </div>
+      </section>
+      <section class="show" id="show-section" aria-labelledby="show">
+        <!-- Section for show introduction -->
+        <div class="show-intro">
+          <!-- Container for show introduction -->
+          <p class="show-intro-text">
+            <!-- Paragraph for show introduction text -->
+            <b><u>Introduction</u></b> <!-- <b> makes text bold (<u>) underlines content -->
+            <em>Friends</em> is a hit American sitcom created by David Crane and
+            Marta Kauffman, that aired from 1994 to 2004 for a total of ten
+            seasons. It stared Jennifer Aniston (Rachel Green), Courtney Cox
+            (Monica Geller), Lisa Kudrow (Phoebe Buffay), Matt Le Blanc (Joey
+            Tribbiani), Matthew Perry (Chandler Bing), and David Schwimmer (Ross
+            Geller). Some fun real-life facts about the cast! 
+            <br> 
+            1. Courtney Cox was just like Monica in real life. 
+            <br> 
+            2. Phoebe and Chandler were originally written as supporting roles - not main characters! 
+            <br> 
+            3. There was an intervention for Jennifer Aniston’s tardiness. David Schwimmer kindly informed her of this <em>issue</em>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer> 
+      <!-- Footer section for the page. Contains information about website (i.e. copyrights, privacy policies, etc.), nav links, contact details, etc. -->
+      <hr> <!-- Adds horizontal line and used to divide different sections -->
+      <p class="footer-text">
+        The Attic 2025 | Friends Fansite 
+        <br>
+        &copy; Jess Wilson <!-- Code used to generate copyright symbol -->
+        <br>
+        All rights reserved...soon. 
+        <br>
+        Not affiliated with NBC or Warner Bros.
+      </p>
+      <nav class="footer-nav" aria-label="Footer navigation"> <!-- Creates an accessible name for an element for screen reader to read for user -->
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="about.html">About</a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+body { /* Styles for all elements in the body section of HTML page */
+    background-image: url(/imgs/fansite-background.jpg); /* Background image for web page */
+    background-size: cover; /* Makes background image cover entire viewport */
+    background-attachment: fixed; /* Keeps background in same spot during scrolling */
+    background-repeat: no-repeat; /* Stops background image from repeating to fill space */
+    max-width: 100; /* Makes sure body doesn't exceed viewport width and makes it responsive */
+    margin: 0; /* Removes default margin set by browser */
+    padding: 0; /* Removes default padding set by browser */
+}
+
+
+.topnav { /* Styles for all elements with ".topnav" as class name */
+    background-color: #333; /* Adds dark background for navigation bar */
+    position: fixed; /* Forces the nav bar to scroll with user up and down page */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+    padding-top: 10px; /* Padding at the top of navigation bar */
+    padding-bottom: 10px; /* Padding at bottom of navigation bar */
+}
+
+
+.topnav a { /* Style links in the navigation bar (anchor elements located in nav) */
+    display: inline-block; /* Allows ability to space out nav links and manipulate position in their container */
+    color: #f2f2f2; /* Changes text color */
+    background-color: #444; /* Adds background color for links */
+    text-align: center; /* Centers text in links */
+    padding: 14px 16px; /* Adds space between content and border for better readability and to look better */
+    text-decoration: none; /* Removes underline from hyperlink */
+    font-family: 'Georgia', serif; /* Changes default font to specified font */
+    font-size: 17px; /* Changes size of font */ 
+    border: #f2f2f2 solid 1px; /* Adds solid line colored border around links in nav bar (makes it look like they are buttons that can be pressed or clicked) */
+    border-radius: 8px; /* Rounds corners of links for visual appeal */
+    margin: 0 8px; /* Adds space around links (content's) border */
+}
+
+
+.topnav a:hover { /* Changes color of links on hover */
+    background-color: #ddd; /* Color for background on hover */
+    color: #444; /* Changes original color of text on hover to show it is clickable */
+    box-shadow: #81ecec 0 0 10px; /* Adds shadow effect around element ( in this case - adds cyan glow effect on link hover) */
+}
+
+
+h1 { /* Main heading styles */
+    text-align: center;
+    background-color: white;
+    width: fit-content; /* Makes heading fit in container and never exceed available space */
+    margin: auto; /* Centers child element (page heading) horizontally within its parent container (header) */ 
+    padding: 16px; 
+    margin-top: 75px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adds shadow effect amd rgba allows for color and opacity levels to be adjusted */
+    font-family: 'Georgia', serif; 
+    
+}
+
+
+.bullet-red { /* Allows for bullet point between letters in main heading to be given a specific color associated with class name (in this case, red) */
+    color: red;
+}
+
+
+.bullet-cyan {
+    color: cyan;
+}
+
+
+.bullet-yellow {
+    color: yellow;
+}
+
+
+h2 { /* h2 element styles */
+    text-align: center;
+    color: #2d3436;
+    font-family: 'Georgia', serif;  
+    text-decoration: underline; /* Adds line under h2 elements */
+}
+
+
+.hp-content, .c-content, .a-content { /* Main content container styles */
+    margin-left: auto; /* Centers element horizontally in container */
+    margin-right: auto;  
+    max-width: 1000px; /* Ensures element never exceeds width of 1000px regardless of viewport size*/
+    padding: 16px;
+    background-color: white;
+    color: #2d3436;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.hp-content h2, .hp-content, .c-content, .characters-content, .a-content { /* Homepage headings and homepage content styles */
+    color: #2d3436;
+    font-family: 'Georgia', serif;
+    margin-top: 15px; /* Adds space above between h2 element and heading title */
+    margin-bottom: 12px; /* Adds space below h2 headings */
+    letter-spacing: 1px; /* Adds space between letters for better readability */
+    padding-top: 4px; /* Adds padding at the top of h2 heading */
+}
+
+
+.hp-content p, .intro p, .show p, .characters-content p, .a-content p { /* Homepage and about page content styling */
+    font-size: 20px;
+    line-height: 1.7; /* Increases line height for better readability */
+    color: #444;
+    background-color: #f4f4f4;
+    margin: 12px 0;
+    border-left: 4px solid #2d3436;
+    margin-bottom: 16px;
+    font-family: 'Georgia', serif;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(247,202,24,0.08);
+}
+
+
+a { /* Anchor link styling */
+    color: black; /* Default color for links */
+    text-decoration: none;
+    font-weight: bold; /* Makes links bold */
+}
+
+
+a:hover { /* Anchor link hover effect */
+    color: #00cec9; /* Color link becomes when mouse is hovering over it */
+}
+
+.show p { /* Paragraphs in show section */
+    background: #f4f4f4;
+    border-left: 4px solid #2d3436;
+}
+
+
+.characters li { /* List items in characters section styling */
+    padding: 12px;
+    border: 1px solid #ddd; /* Adds a border around each character */
+    border-radius: 8px; /* Rounds corners of character box */
+    margin: 8px 0;
+    list-style: none; /* Removes bullet point from list items */
+}
+
+
+.char-img { /* Character image styling */
+    width: 100px; /* Adjusts image width */
+    height: 100px; /* Adjusts image height */
+    object-fit: cover; /* Makes image fill container but still maintains aspect ratio */
+    border-radius: 50%; /* Makes image circular by setting radius of corners to half its width and height (only perfect circle if image is perfectly square) */
+    margin-right: 12px; 
+    padding: 18px;
+}
+
+
+.characters .char-bio { /* Character bio styling */
+    border-left: 4px solid #81ecec; 
+    padding-left: 16px; 
+    margin-left: 16px; 
+    color: #2d3436; 
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #f4f4f4;
+}
+
+
+footer { /* Footer styles */
+    background-color: #222;
+    color: black;
+    text-align: center;
+    padding: 30px 10px 20px;
+    margin-top: 40px;
+    letter-spacing: 0.5px; /* Adds bit of space between letters for better readability */
+    display: flex; /* Allows for items in footer to be lined up in one column */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Adjusts horizontal position of elements so they are centered */
+    justify-content: center; /* Adjusts vertical position of elements so they are centered */
+    font-family: 'Georgia', serif;
+}
+
+
+footer hr { /* Horizontal rule in footer styling */
+    border: 1px solid #81ecec; /* Changes default color for horizontal rule */
+    width: 1000px;
+    margin: 0 auto 20px auto; /* Centers horizontal rule by adding space around elements border */
+}
+
+
+footer a { /* Footer links styling */
+    color: #81ecec;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    
+}
+
+
+footer a:hover { /* Footer link hover effect */
+    text-decoration: underline; /* Underlines links on hover */
+}
+
+
+/* Styling for footer paragraphs to maintain consistent spacing, font size, and color */
+footer p { 
+    margin: 5px 0; 
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: 'Georgia', serif;
+    line-height: 2;
+    margin: 8px 0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1em; 
+    max-width: 800px; /* Ensures paragraphs don't stretch too wide */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px;
+}
